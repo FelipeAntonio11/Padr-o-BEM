@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    
+    <style>
+
+        .container{
+            background-color: rgba(21, 178, 226, 0.849);
+            padding: 10px;
+        }
+
+        .title{
+            background-color:rgb(253, 255, 255);
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .title__text{
+            font: 17px sans-serif;
+        }
+
+        .title__text--color{
+            color:rgb(0, 0, 0);
+        }
+
+        .content{
+            background-color: rgb(12, 3, 3);
+            border-radius: 8px;
+            padding: 15px;
+        }
+
+        .content__form{
+            background-color: rgb(188, 24, 238);
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .content__label{
+            padding: 15px;
+            font: 12px sans-serif;
+        }
+
+        .content__submit{
+            background-color: rgb(30, 14, 247);
+            border-radius: 5px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .content__submit--hover:hover{
+            background-color: rgb(255, 9, 9);
+        }
+
+        .bloco__elemento--modificador{
+            color: rgb(0, 0, 0)
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="bloco">
+            <p class="bloco__elemento--modificador">
+                Teste de parágrafo do BEM
+            </p>
+        </div>
+        
+        <div class="title">
+            <h1 class="title__text title__text--color">Formulário</h1>
+        </div>
+        
+        <div class="content">
+
+            <form action="" class="content__form">
+
+                <label for="nome" class="content__label">Nome</label>
+                <input type="text">
+
+                <label for="email" class="content__label">Email</label>
+                <input type="email">
+
+                <label for="senha" class="content__label">Senha</label>
+                <input type="password">
+
+                <label for="confirmar-senha" class="content__label">Confirmar Senha</label>
+                <input type="password">
+
+                <input type="submit" value="Confirmar" class="content__submit content__submit--hover">
+
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>

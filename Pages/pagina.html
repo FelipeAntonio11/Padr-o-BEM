@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do BEM</title>
+    
+    <style>
+
+        .container {
+            border: 1px solid rgb(224, 46, 15);
+            padding: 15px;
+            background-color: rgb(12, 159, 185);
+        }
+        .container__form{
+            background-color:rgb(15, 6, 4);
+            padding: 10px;
+        }
+        /* fazer isso */
+        .container__input{
+            background-color:rgb(240, 254, 255);
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .container__submit{
+            background-color:rgb(133, 20, 16);
+            border-radius: 5px;
+            color: white;
+        }
+        .container__header{
+            font: 20px sans-serif;
+            color: rgb(0, 0, 0);
+        }
+        .container__header--color{
+            color: rgb(0, 0, 0)
+        }
+        .container__submit--hover:hover{
+            background-color: rgb(179, 166, 153);
+        }
+        .container__submit--active:active{
+            background-color: rgb(221, 199, 191);
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <!-- BLOCO -->
+    <div class="container">
+
+        <h1 class="container__header container__header--color">
+            Meu formulário</h1>
+
+        <!-- COMPONENTE -->
+        <form action="" class="container__form">
+
+            <!-- COMPONENTES -->
+            <input type="text" placeholder="Nome" 
+            class="container__input">
+            
+            <input type="password" placeholder="Senha" 
+            class="container__input">
+            
+            <input type="submit" value="Entrar" 
+            class="container__submit container__submit--hover 
+            container__submit--active">
+        </form>
+
+
+    </div>
+
+</body>
+</html>
